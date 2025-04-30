@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feed FURIA</title>
+  <link rel="stylesheet" href="feed.css">
+ 
+</head>
+<body>
+  <div class="topbar">
+    <img src="images/logo-removebg-preview.png" alt="FURIA Logo">
+    <nav>
+      <a href="#">Início</a>
+      <a href="#">Explorar</a>
+      <a href="#">Notificações</a>
+    </nav>
+    <div style="display: flex; align-items: center;">
+      <button class="toggle-mode-btn" onclick="toggleMode()">Modo Claro</button>
+      <img src="https://i.imgur.com/8Km9tLL.png" alt="User" style="height:40px; border-radius: 50%; margin-left: 10px;">
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="feed-container">
+      <input type="text" placeholder="What's happening?" style="width: 100%; padding: 10px; border-radius: 10px; border: none; margin-bottom: 20px; font-size: 1rem;">
+    
+      <div class="tweet">
+        <div class="user">
+          <img src="https://i.imgur.com/8Km9tLL.png" alt="Marcelo">
+          <span class="username">Marcelo</span>
+          <span class="handle">@marcelo.marcelo</span>
+        </div>
+        <div class="content">VAMOOOOOOOOOOOO! <span class="hashtag">#FURIA</span></div>
+        <div class="actions">
+          <span>24</span>
+          <span>18</span>
+          <button class="like-button" onclick="this.classList.toggle('liked')">Curtir</button>
+        </div>
+      </div>
+
+      <div class="tweet">
+        <div class="user">
+          <img src="images/logo-removebg-preview.png" alt="FURIA">
+          <span class="username">FURIA</span>
+          <span class="handle">@FURIAofficial</span>
+        </div>
+        <div class="content">Art quebrando tudo na Mirage! <span class="hashtag">#CSGO #GoFURIA</span></div>
+        <div class="tweet-images">
+          <img src="./images/frogmeme.jpg" alt="Pepe">
+          <img src="./images/awp.jpg" alt="CS Mirage">
+        </div>
+        <div class="actions">
+          <span>36</span>
+          <span>27</span>
+          <button class="like-button" onclick="this.classList.toggle('liked')">Curtir</button>
+        </div>
+      </div>
+
+      <div class="tweet">
+        <div class="user">
+          <img src="https://i.imgur.com/v0gU08z.png" alt="Bruna">
+          <span class="username">Bruna Lima</span>
+          <span class="handle">@brunalima</span>
+        </div>
+        <div class="content">go furia <span class="hashtag">#FURIA</span></div>
+        <div class="actions">
+          <span>12</span>
+          <span>9</span>
+          <button class="like-button" onclick="this.classList.toggle('liked')">Curtir</button>
+        </div>
+      </div>
+
+      <div class="tweet">
+        <div class="user">
+          <img src="https://i.imgur.com/xXzJAG7.png" alt="Lucas">
+          <span class="username">Lucas Almeida</span>
+          <span class="handle">@lucas.almeida</span>
+        </div>
+        <div class="content">What a play! 😤 <span class="hashtag">#FURIA</span></div>
+        <img src="./images/fallen.jpg" alt="Cat meme">
+        <div class="actions">
+          <span>—</span>
+          <span>—</span>
+          <button class="like-button" onclick="this.classList.toggle('liked')">Curtir</button>
+        </div>
+      </div>
+    </div>
+
+    <aside class="sidebar">
+      <h2>Tópicos do momento</h2>
+      <div class="trend"><span class="hashtag">#FURIA</span> – 120K Tweets</div>
+      <div class="trend"><span class="hashtag">#CSGO</span> – 85K Tweets</div>
+      <div class="trend"><span class="hashtag">#ArtGod</span> – 64K Tweets</div>
+      <div class="trend"><span class="hashtag">#Mirage</span> – 58K Tweets</div>
+      <div class="trend"><span class="hashtag">#LetsGo</span> – 42K Tweets</div>
+    </aside>
+  </div>
+
+  <script>
+    function toggleMode() {
+      const body = document.body;
+      const btn = document.querySelector('.toggle-mode-btn');
+      body.classList.toggle('light-mode');
+      btn.textContent = body.classList.contains('light-mode') ? 'Modo Escuro' : 'Modo Claro';
+    }
+  </script>
+</body>
+</html>

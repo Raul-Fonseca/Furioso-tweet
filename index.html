@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login FURIA</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+  <div class="container">
+    <img src="images/logo-removebg-preview.png" alt="FURIA" class="logo"/>
+
+    <h1>Entrar no <span class="highlight">FURIA</span></h1>
+
+    <form id="login-form">
+      <input type="text" placeholder="Usuário" id="username" required />
+      <input type="password" placeholder="Senha" id="password" required />
+      <button type="submit">Entrar</button>
+    </form>
+
+    <div id="google-login" class="google-btn"></div>
+
+    <p class="info">Dados da API do Twitter nas <strong>#FURIA</strong> serão usados</p>
+  </div>
+
+  <script src="script.js"></script>
+ </body>
+</html>
